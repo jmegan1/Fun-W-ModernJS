@@ -1,0 +1,13 @@
+body {
+  background-color: bisque;
+  color: rgb(105, 101, 101);
+}
+
+h1 {
+  color: aqua;
+}
+
+p {
+  color: rgb(197, 233, 162);
+  font-size: 35px;
+}
