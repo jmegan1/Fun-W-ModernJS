@@ -66,3 +66,14 @@ const z = (x, y) => {
 };
 document.write(z(5, 5));
 */
+/*
+var myConcat = function(arr1, arr2) {
+  return arr1.concat(arr2);
+};
+document.write(myConcat(["joeDog is"], ["the greatest dog ever"]));
+*/
+// shorten to
+/*
+const myConcat = (arr1, arr2) => arr1.concat(arr2);
+document.write(myConcat(["joeDog is so"], [" super cool"]));
+*/
