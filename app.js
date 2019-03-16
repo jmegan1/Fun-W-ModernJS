@@ -42,3 +42,27 @@ const age = freezeObj();
 
 console.log(age);
 */
+/*
+// use arrow functions to write concise amonymous functions
+//ES5
+var magic = function() {
+  return newDate();
+};
+
+// shorten above code to ES6
+
+const joeDog = () => new Date();
+
+const x = (x, y) => x * y;
+console.log(x(5, 5));
+console.log(x(53, 5.78));
+console.log(x(5234, 5.9));
+
+//You can only omit the return keyword and the curly brackets if the function is a
+//single statement. Because of this, it might be a good habit to always keep them:
+
+const z = (x, y) => {
+  return x * y;
+};
+document.write(z(5, 5));
+*/
