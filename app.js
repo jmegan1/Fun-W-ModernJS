@@ -13,7 +13,7 @@ joe("joedog");
 */
 
 // mutate an array declared with const
-
+/*
 const ARRAY = [555, 666, 777];
 function strict() {
   ARRAY[0] = 222;
@@ -22,15 +22,16 @@ function strict() {
 }
 strict();
 console.log(ARRAY);
+*/
 
 // prevent object mutation
-/*
+
 function freezeObj() {
   "use strict";
   const joeDog = {
     age: 10
   };
-  Object.freeze(joeDog);
+  Object.freeze(joeDog); // <= important
 
   try {
     joeDog.age = 25;
@@ -42,7 +43,7 @@ function freezeObj() {
 const age = freezeObj();
 
 console.log(age);
-*/
+
 /*
 // use arrow functions to write concise amonymous functions
 //ES5
