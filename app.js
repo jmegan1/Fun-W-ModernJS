@@ -25,7 +25,7 @@ console.log(ARRAY);
 */
 
 // prevent object mutation
-
+/*
 function freezeObj() {
   "use strict";
   const joeDog = {
@@ -43,7 +43,7 @@ function freezeObj() {
 const age = freezeObj();
 
 console.log(age);
-
+*/
 /*
 // use arrow functions to write concise amonymous functions
 //ES5
