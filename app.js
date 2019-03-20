@@ -77,3 +77,66 @@ document.write(myConcat(["joeDog is"], ["the greatest dog ever"]));
 const myConcat = (arr1, arr2) => arr1.concat(arr2);
 document.write(myConcat(["joeDog is so"], [" super cool"]));
 */
+
+// Set Default parameters for your funtions
+/*
+const increment = (function() {
+  return function increment(number, value = 1) {
+    return number + value;
+  };
+})();
+document.write(increment(5, 2));
+document.write(increment(5));
+*/
+
+// use the rest operator with function parameters
+// below is old way
+
+/*const sum = (function() {
+  return function sum(x, y, z) {
+    const args = [x, y, z];
+    return args.reduce((a, b) => a + b, 0);
+  };
+})();
+document.write(sum(1, 2, 3));
+*/
+
+// new way but same idea below
+
+/*
+const sum = (function() {
+  return function sum(...args) {
+    return args.reduce((a, b) => a + b, 0);
+  };
+})();
+
+document.write(sum(1, 4, 6, 77, 686));
+*/
+
+// use the spread operator to evaluate arrays in-place
+/*
+const arr1 = ['JAN', 'FEB', 'MAR', 'APR', 'MAY'];
+let arr2;
+(function () {
+  arr2 = arr1; // change this line
+  arr1[0] = 'potato'
+})();
+console.log(arr2);
+*/
+
+//scope with var vs. let
+
+/*
+function checkScope() {
+  "use strict";
+  let i = "function scope"; // var i
+  if (true) {
+    let i = "block scope";
+    console.log("Block scope", i);
+  }
+  console.log("Function scope", i);
+  return i;
+}
+
+checkScope();
+*/
