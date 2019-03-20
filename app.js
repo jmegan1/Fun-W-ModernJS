@@ -2,26 +2,24 @@
 
 //Declare a Read-only var with the const keyword
 /*
-joedog(' joedog');
-
-function joe(string){
-  const sentence = string + ' is cool';
-  for(let i = 0; i < string.length; i++){
-    console.log(sentence);
+function joe(string) {
+  "use strict";
+  const SENTENCE = string + " is cool";
+  for (let i = 0; i < string.length; i++) {
+    console.log(SENTENCE);
   }
 }
-joe('joedog');
+joe("joedog");
 */
 
 // mutate an array declared with const
-/*
-const array = [555, 666, 777];
 
-array[0] = 222;
-array[1] = 333;
-array[2] = 444;
-console.log(array)
-*/
+const ARRAY = [555, 666, 777];
+
+ARRAY[0] = 222;
+ARRAY[1] = 333;
+ARRAY[2] = 444;
+console.log(ARRAY);
 
 // prevent object mutation
 /*
