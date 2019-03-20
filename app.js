@@ -15,10 +15,12 @@ joe("joedog");
 // mutate an array declared with const
 
 const ARRAY = [555, 666, 777];
-
-ARRAY[0] = 222;
-ARRAY[1] = 333;
-ARRAY[2] = 444;
+function strict() {
+  ARRAY[0] = 222;
+  ARRAY[1] = 333;
+  ARRAY[2] = 444;
+}
+strict();
 console.log(ARRAY);
 
 // prevent object mutation
