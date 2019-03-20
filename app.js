@@ -1,5 +1,6 @@
 // MODERN JS
 
+//Declare a Read-only var with the const keyword
 /*
 joedog(' joedog');
 
